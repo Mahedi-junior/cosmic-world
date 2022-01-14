@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:ital,wght@0,500;1,200&display=swap');
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    /* height: 100vh;  */
+    background-image: url(../images/cloud.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.514);
+    background-blend-mode:overlay;  
+}
+.container{
+    max-width: 1200px; 
+     margin: 0 auto; 
+     padding: 30px;
+}
+.highlight{
+    color: rgb(235, 60, 147);
+}
+.praimary-button{
+outline: 0;
+border: 0;
+padding: 15px 20px;
+background-image: linear-gradient(90deg, #fc0c90, #c21273 );
+color: #ffff;
+font-size: 18px;
+text-transform: uppercase;
+border-radius: 10px;
+cursor: pointer;
+ box-shadow: 0 7px 0 #8d0650; 
+position: relative;
+top: 0px;
+}
+.praimary-button:active{
+    top: 5px;
+    box-shadow: 0 2px 0 #8d0650; 
+}
+.section-title{
+    text-align: center;
+}
+.section-title h2{
+font-size: 30px;
+border-bottom: 2px solid  #fc0c90;
+margin: 50px 0px;
+display: inline-block;
+text-transform: uppercase;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center; 
+}
+.navigation{
+    display: flex;
+}
+.navigation li{
+list-style: none;
+margin: 10px;
+}
+li a{
+    text-decoration: none;
+    color: #ffff;
+    font-weight: 600;
+    padding: 15px 10px;
+}
+
+.banner{ 
+     height: calc(100vh - 160px);
+     display: grid;
+     grid-template-columns: 1fr 1fr;    
+}
+.banner-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.banner-left h1{
+    font-size: 45px;
+    color: #ffff;
+}
+.banner-left p{
+    color: #ffff;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+.banner-right{
+    display: flex;
+    justify-content: center;
+     align-items: flex-end; 
+}
+.banner-right img{ 
+width: 100%;
+}
+
+
+.feature{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: center;
+    
+}
+.card{
+    width: 300px;
+    padding: 30px;
+    margin: 0 auto;
+    box-shadow: 0 30px 35px rgb(172, 170, 171);
+}
+.card .card-icon{
+   background-color: #fc0c90;
+   border-radius: 50%;
+   height: 40px;
+   width: 40px;
+   padding: 10px;
+   font-size: 20px;
+   color: #ffff;
+}
+.card h3{
+    margin-top: 10px;
+    font-size: 25px;
+    color: #fc0c90;
+}
+.card p{
+    margin: 10px 0;
+    line-height: 1.5;
+}
+.card a{
+    text-decoration: none;
+    color: #fc0c90;
+}
